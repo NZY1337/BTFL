@@ -1,0 +1,19 @@
+@import 'placeholders';
+@import 'variables';
+@import 'default';
+@import 'menu';
+
+
+
+#about-page {
+	#red-col {
+		background:rgb(255, 184, 184);
+		position:relative;
+		width: calc(50% + 100px);
+		
+	}
+	
+	#blue-col {
+		background:rgba(0, 250, 254, .6);
+	}
+}

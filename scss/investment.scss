@@ -1,0 +1,26 @@
+@import 'placeholders';
+@import 'variables';
+@import 'default';
+@import 'menu';
+
+
+
+#investment-page {
+	.wrapper {
+		position: relative;
+		cursor:pointer;
+		
+			h3 {
+				font-weight: bold;
+				position:absolute;
+				transform: translate(-50%, -50%);
+				left:50%;
+				bottom:5rem;
+				color:white;
+				text-align: center;
+			} 
+		
+	}
+}
+
+

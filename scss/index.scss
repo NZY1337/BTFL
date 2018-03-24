@@ -1,0 +1,43 @@
+@import 'placeholders';
+@import 'variables';
+@import 'default';
+@import 'menu';
+
+
+
+
+
+#hero {
+	h1 {
+		position:absolute;
+		color:black;
+		letter-spacing: 1rem;
+	}
+	
+	h3 {
+		letter-spacing:.3rem;
+		background: black;
+	}
+}
+
+
+
+
+
+#contact {
+    h3 {
+		letter-spacing:.3rem;
+		background: black;
+	}
+}
+
+
+#investment {
+	.bg-color-2 {
+		position:absolute;
+		top:0;
+		left:10rem;
+		
+	}
+}
+

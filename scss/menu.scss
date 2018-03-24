@@ -1,0 +1,182 @@
+
+// HERO section
+
+.hero {
+	height: calc(100% - 48px);
+}
+#hero {
+	
+/* border under li EFFECT*/
+	
+	li {
+		.hover-link {
+			display: inline-block;
+			color: black;
+			text-decoration: none;
+		}
+
+		.hover-link::after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 2px;
+			background: black;
+			transition: width .3s;
+		}
+
+		.hover-link:hover::after {
+			width: 100%;
+			//transition: width .3s;
+		}
+	}
+	
+	
+/* OVERLAY EFFECT*/
+	.overlay {
+		height: 0%;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: white;
+		overflow-y:scroll;
+		transition: 0.5s;
+		
+	}
+
+	.overlay-content {
+		position: relative;
+		top: 25%;
+		width: 100%;
+		text-align: center;
+		margin-top: 30px;
+		letter-spacing: .3rem;
+	}
+
+	.overlay a {
+		text-decoration: none;
+		color: black;
+		display: inline-block;
+		transition: 0.3s;
+		font-size:18px;
+		padding-bottom:1rem;
+		
+		@media (min-width:768px) {
+			padding-bottom:2rem;
+			text-decoration: none;
+			font-size: 32px;
+			color: black;
+			display: inline-block;
+			transition: 0.3s;
+		}
+		
+	
+	}
+
+	.overlay a:hover, .overlay a:focus {
+		color: black;
+	}
+
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 40px;
+	}
+
+	.toggle-menu {
+		&:hover #line2 {
+			width:1.4rem;
+		}
+		
+		
+		&:hover #line1 {
+			width:1.1rem;
+		}
+		
+		&:hover #line3 {
+			width:1.1rem;
+		}
+		
+		cursor: pointer;
+		position: absolute;
+		top:0;
+		right:0;
+
+		#line1 {
+			width: 1.4rem;
+			border-bottom: 2px solid black;
+			transition:.1s ease;
+		}
+
+		#line2 {
+			width: 1.1rem;
+			border-bottom: 2px solid black;
+			padding-bottom:.3rem;
+			transition:.1s ease;
+			
+
+		}
+
+		#line3 {
+			width: 1.4rem;
+			border-bottom: 2px solid black;
+			padding-bottom:.3rem;
+			transition:.1s ease;
+		}
+	}
+	
+	p {
+		color:black;
+	}
+	h1 {
+		font-size: 42px;
+		font-family:serif;
+		color:black;
+	
+		
+		@media (min-width: 768px) {
+			font-family:serif;
+			color:black;
+			font-size:5rem;
+			
+		}
+	}
+}
+
+
+// MENU section
+#menu {
+	
+	margin-top:-5rem;
+	.hover-link {
+		@extend %hover_link;
+	}
+
+	#menu-col {
+			display:block;
+			flex-direction: column;
+			padding-top:3rem;
+			padding-bottom:3rem;
+			justify-content: center;
+
+
+		@media (min-width:768px) {
+			display:flex;
+			flex-direction: row;
+			padding-top:3rem;
+			padding-bottom:3rem;
+			li:not(:last-child) {
+				margin-right:2rem;
+			}
+		}
+
+	}
+}
+
+
+
+
+
+

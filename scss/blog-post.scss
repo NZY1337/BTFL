@@ -1,0 +1,46 @@
+@import 'placeholders';
+@import 'variables';
+@import 'default';
+@import 'menu';
+
+
+
+#blog-post-page {
+	h3 {
+		font-size:1.4rem;
+		text-transform: uppercase;
+		font-family: $monster;
+	}
+}
+
+
+
+#comments {
+	.share-col {
+		.share {
+			&:hover {
+			cursor:pointer;
+		}
+		}
+		.social-share {
+			display:none;
+		}
+	}
+
+	  form {
+            text-transform: uppercase;
+			
+            .form-group {
+                ::placeholder {
+                    color:black;
+                    text-transform: uppercase;
+                }
+                input, select, textarea{
+                    border-radius:0;
+                    border:1px solid black;
+                    cursor:pointer;
+					
+                }
+            }
+        }
+}
